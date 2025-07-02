@@ -50,4 +50,25 @@
   iframe{
     margin-bottom: $m;
   }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: $m;
+
+    th, td {
+      padding: $s;
+      text-align: left;
+    }
+
+    th {
+      background-color: $lighter;
+      border-bottom: 1px solid $darker;;
+      font-weight: $fw-semibold;
+    }
+
+    tr:nth-child(even) {
+      background-color: $lighter;
+    }
+  }
 }
