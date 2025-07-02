@@ -7,7 +7,7 @@ date: 02.07.2025
 ## Konzept
 Für die Bereitstellung von Artefakten im **CDA**  mit optionalem Wasserzeichen und  optionaler Download-Möglichkeit wird folgendes technische Konzept definiert.
 
-Die relevanten Informationen zur Wasserzeichen- und Download-Verfügbarkeit eines Artefakts werden **in den IPTC-Daten** der jeweiligen **Bild-Datei** hinterlegt. Dafür wird das \*\*Feld \*\*\`SpecialInstructions` verwendet.
+Die relevanten Informationen zur Wasserzeichen- und Download-Verfügbarkeit eines Artefakts werden **in den IPTC-Daten** der jeweiligen **Bild-Datei** hinterlegt. Dafür wird das **Feld** `SpecialInstructions` verwendet.
 
 ## Kennzeichnung
 Folgende Keywords und Kombinationen werden zur Kennzeichnung verwendet:
