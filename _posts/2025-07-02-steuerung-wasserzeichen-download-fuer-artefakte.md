@@ -5,19 +5,19 @@ date: 02.07.2025
 ---
 
 ## Konzept
-Für die Bereitstellung von Artefakten im **CDA**  mit optionalem Wasserzeichen und  optionaler Download-Möglichkeit wird folgendes technische Konzept definiert.
+Zur Steuerung der Anzeige von Wasserzeichen in Artefakten und der Download-Möglichkeit von Artefakten im **CDA** werden entsprechende Kennzeichnungen in den **IPTC-Daten** der jeweiligen **Bilddatei** hinterlegt.  
 
-Die relevanten Informationen zur Wasserzeichen- und Download-Verfügbarkeit eines Artefakts werden **in den IPTC-Daten** der jeweiligen **Bild-Datei** hinterlegt. Dafür wird das **Feld** `SpecialInstructions` verwendet.
+Hierfür wird das IPTC-Feld **`SpecialInstructions`** verwendet.  
 
 ## Kennzeichnung
 Folgende Keywords und Kombinationen werden zur Kennzeichnung verwendet:
 
-| Zustand                                               | IPTC-Eintrag (`SpecialInstructions`) |
-| ----------------------------------------------------- | ------------------------------------ |
-| Artefakt hat Wasserzeichen                            | `watermark`                          |
-| Artefakt ist downloadbar                              | `download`                           |
-| Artefakt hat Wasserzeichen **und** ist downloadbar    | `watermark, download`                |
-| Artefakt ohne Wasserzeichen und **nicht** downloadbar | *(Feld leer lassen)*                 |
+| Zustand                                                    | IPTC-Eintrag (`SpecialInstructions`) |
+| ---------------------------------------------------------- | ------------------------------------ |
+| Artefakt hat kein Wasserzeichen                            | `no-watermark`                       |
+| Artefakt ist downloadbar                                   | `download`                           |
+| Artefakt hat kein Wasserzeichen **und** ist downloadbar    | `no-watermark, download`             |
+| Artefakt ohne Wasserzeichen und **nicht** downloadbar      | *(Feld leer lassen)*                 |
 
 
 Die Keywords werden als **kommagetrennte Liste** im Feld `SpecialInstructions` abgelegt.
