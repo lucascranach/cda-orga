@@ -17,15 +17,19 @@ In folgender Linksammlung sind Links zur jeweiligen deutschen und englischen Ver
 - Externe Suche
   - [Suche in deutsch](https://lucascranach.org/de/search/)
   - [Suche in englisch](https://lucascranach.org/de/search/)
+  - [API-Server](https://mivs02.gm.fh-koeln.de)
 - Externe Vorschau
   - [Suche in deutsch](https://lucascranach.org/de/intern/search-external-preview/)
   - [Suche in englisch](https://lucascranach.org/en/intern/search-external-preview/)
+  - [API-Server](https://mivs02.gm.fh-koeln.de)
 - Interne Suche
   - [Suche in deutsch](https://lucascranach.org/de/intern/search/)
   - [Suche in englisch](https://lucascranach.org/en/intern/search/)
+  - [API-Server](https://mivs03.gm.fh-koeln.de)
 - Interne Vorschau
   - [Suche in deutsch](https://lucascranach.org/de/intern/search-internal-preview)
   - [Suche in englisch](https://lucascranach.org/en/intern/search-internal-preview)
+  - [API-Server](https://mivs03.gm.fh-koeln.de)
 
 <!--more-->
 
