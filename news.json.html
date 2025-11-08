@@ -1,0 +1,21 @@
+---
+layout: null
+permalink: /news.json
+---
+[
+{%- assign items = site.news -%}
+{%- for item in items -%}
+  {%- assign base = item.basename -%}
+  {%- assign filename_date = base | slice: 0, 10 -%}
+  {
+    "type": "news",
+    "id": {{ item.path | jsonify }},
+    "title": {{ item.title | jsonify }},
+    "subtitle": {{ item.subtitle | default: nil | jsonify }},
+    "date": {{ item.date | default: filename_date | jsonify }},
+    "url": {{ nil | jsonify }},
+    "excerpt": {{ item.excerpt | strip_html | strip_newlines | jsonify }},
+    "content": {{ item.content | jsonify }}
+  }{%- if forloop.last == false -%},{%- endif -%}
+{%- endfor -%}
+]

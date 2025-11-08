@@ -1,0 +1,38 @@
+---
+layout: null
+permalink: /content.json
+---
+{
+  "posts": [
+  {%- for post in site.posts -%}
+    {
+      "type": "post",
+      "id": {{ post.id | jsonify }},
+      "title": {{ post.title | jsonify }},
+      "subtitle": {{ post.subtitle | default: nil | jsonify }},
+      "date": {{ post.date | date_to_xmlschema | jsonify }},
+      "url": {{ post.url | relative_url | jsonify }},
+  "categories": {{ post.categories | jsonify }},
+  "tags": {{ post.tags | jsonify }},
+      "excerpt": {{ post.excerpt | strip_html | strip_newlines | jsonify }},
+      "content": {{ post.content | jsonify }}
+    }{%- if forloop.last == false -%},{%- endif -%}
+  {%- endfor -%}
+  ],
+  "news": [
+  {%- for item in site.news -%}
+    {%- assign base = item.basename -%}
+    {%- assign filename_date = base | slice: 0, 10 -%}
+    {
+      "type": "news",
+      "id": {{ item.path | jsonify }},
+      "title": {{ item.title | jsonify }},
+      "subtitle": {{ item.subtitle | default: nil | jsonify }},
+      "date": {{ item.date | default: filename_date | jsonify }},
+      "url": {{ nil | jsonify }},
+      "excerpt": {{ item.excerpt | strip_html | strip_newlines | jsonify }},
+      "content": {{ item.content | jsonify }}
+    }{%- if forloop.last == false -%},{%- endif -%}
+  {%- endfor -%}
+  ]
+}
