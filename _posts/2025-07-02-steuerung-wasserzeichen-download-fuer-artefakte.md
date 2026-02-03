@@ -12,12 +12,12 @@ Hierfür wird das IPTC-Feld **`SpecialInstructions`** verwendet.
 ## Kennzeichnung
 Folgende Keywords und Kombinationen werden zur Kennzeichnung verwendet:
 
-| Zustand                                                    | IPTC-Eintrag (`SpecialInstructions`) |
-| ---------------------------------------------------------- | ------------------------------------ |
-| Artefakt hat kein Wasserzeichen                            | `no-watermark`                       |
-| Artefakt ist downloadbar                                   | `download`                           |
-| Artefakt hat kein Wasserzeichen **und** ist downloadbar    | `no-watermark, download`             |
-| Artefakt ohne Wasserzeichen und **nicht** downloadbar      | *(Feld leer lassen)*                 |
+| Zustand                                                       | IPTC-Eintrag (`SpecialInstructions`) |
+| ------------------------------------------------------------- | ------------------------------------ |
+| Artefakt hat kein Wasserzeichen                               | `no-watermark`                       |
+| Artefakt ist downloadbar                                      | `download`                           |
+| Artefakt hat kein Wasserzeichen **und** ist downloadbar       | `no-watermark, download`             |
+| Artefakt hat Wasserzeichen **und** ist **nicht** downloadbar  | *(Feld leer lassen)*                 |
 
 
 Die Keywords werden als **kommagetrennte Liste** im Feld `SpecialInstructions` abgelegt.
