@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /posts.json
+---
+[
+{%- for post in site.posts -%}
+  {
+    "type": "post",
+    "id": {{ post.id | jsonify }},
+    "title": {{ post.title | jsonify }},
+    "subtitle": {{ post.subtitle | default: nil | jsonify }},
+    "date": {{ post.date | date_to_xmlschema | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+  "categories": {{ post.categories | jsonify }},
+  "tags": {{ post.tags | jsonify }},
+    "excerpt": {{ post.excerpt | strip_html | strip_newlines | jsonify }},
+    "content": {{ post.content | jsonify }}
+  }{%- if forloop.last == false -%},{%- endif -%}
+{%- endfor -%}
+]

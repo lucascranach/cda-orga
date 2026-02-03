@@ -1,0 +1,6 @@
+---
+layout: null
+# Hinweis: Diese Datei ist durch posts.json.html ersetzt worden.
+permalink: /_internal/deprecated/posts.src.json
+---
+{ "status": "deprecated - use /intern/blog/posts.json" }

@@ -10,7 +10,7 @@ main{
   calc(var(--responsive-padding-top) *2)
   calc(var(--responsive-padding-right-left) *2)
   calc(var(--responsive-padding-right-left) *2)
-  calc(var(--responsive-padding-bottom) *2);
+  0;
 
   max-width: $column-xlarge;
 }
