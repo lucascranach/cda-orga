@@ -5,7 +5,7 @@ status: aktiv
 date: 2026-08-25
 ---
 
-# Feature-Liste: Alle Ergebnisse der Förderphase im Detail
+# Feature-Liste: Alle Features, die in der letzten Förderphase implementiert wurden
 
 Vollständige Liste aller Features, sortiert nach Komponente und chronologisch. Zweck: Kontext- und Nachschlagewerk, nicht für den direkten Abdruck im Bericht gedacht, sondern als Grundlage, um Berichtstexte zu schreiben und zu prüfen, ob etwas Relevantes fehlt. Format pro Eintrag: **Feature (Zeitraum)**, dann technische Umsetzung, dann Projektrelevanz (Bezug zu den Zielen dieser Förderphase, Antrag 2022, Teil I Erschließung/Digitalisierung/Vernetzung, Teil II interdisziplinäre Erforschung/Vermittlung).
 
